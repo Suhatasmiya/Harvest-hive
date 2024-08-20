@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Give your details</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: #32CD32;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="file"],
+        form button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+            font-size: 16px;
+        }
+
+        form input[type="text"]:focus,
+        form input[type="file"]:focus {
+            outline: none;
+            box-shadow: 0px 0px 10px 0px rgba(50, 205, 50, 0.5);
+        }
+
+        form button[type="submit"] {
+            background-color: #32CD32;
+            color: #ffffff;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        form button[type="submit"]:hover {
+            background-color: #228B22;
+        }
+
+        form .error {
+            color: #ff0000;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="logo/mini.jpg"  alt="not working" style="border-radius: 50%;border-color: black; width: 75px; "></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="details.html">Give Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="priceTrend.html">Trends</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="newsfarming.html">News</a>
+                  </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Signup</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="row">
+
+                    <div class="col-md-14">
+                        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>Enter your details
+                                here</b></h1>
+                        <form>
+                            <div>
+
+                                <pre><label for="giveLocation"><b style="font-size: 18px;">Give your location:</b></label>      <button onclick="myFunction()">Give Access</button></pre>
+                            </div>
+                            <div class="form-group">
+                                <label for="productName">Enter land size in acres</label>
+                                <input type="Number" class="form-control" id="productName">
+                            </div>
+                            <div class="form-group">
+                                <label for="productPrice">What crop do you grow predominantly?</label>
+                                <input type="text" class="form-control" id="productPrice" placeholder="Enter crop name">
+                            </div>
+                            <label for="browser">Which farming season do you work at?</label>
+                            <input list="browsers" name="browser" id="browser">
+
+                            <datalist id="browsers">
+                                <option value="Rabi">
+                                <option value="Kharif">
+                                <option value="Zaid">
+
+                            </datalist>
+                            <div class="form-group">
+                                <label for="description">Description:</label>
+                                <textarea class="form-control" id="description" name="description" rows="4"
+                                    placeholder="Enter the details of your previous crop harvest"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="productPrice">Enter previous years net income</label>
+                                <input type="number" class="form-control" id="productPrice">
+                            </div>
+                            <button type="submit" class="btn btn-primary" onclick="hrefFunction()">Submit </a> </button>
+                        </form>
+                        <div class="form-group row justify-content-center">
+                            <img src="img/indian-farmer-1610471656527.webp" alt="someImage" width="400"
+                                style="border-color: green; border-radius: 5%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Bootstrap JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-x2QozsiX9Kv3I+3YbiYb/Q+nwK6zvFTsQl4s4s4JcWUH9FXvtn44dU6YrqUke1zJ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-zRLqQq3G7ypk4P/yBNC/szuztBl+Q2ZKfJ1x+V1gBtDtaENMkXpHnFXc1zJmKb+8"
+        crossorigin="anonymous"></script>
+    <script src="css/script.js"></script>
+    <script>
+        function hrefFunction(){
+            windows.location.href = "success.html";
+        }
+    </script>
+</body>
+
+</html>

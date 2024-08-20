@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+section.products {
+    flex: 1;
+    min-width: 250px;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+section.graph {
+    flex: 1;
+    min-width: 250px;
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.product {
+    margin-bottom: 30px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.graph canvas {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section.products,
+    section.graph {
+        flex: 1;
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+.container {
+    padding: 20px;
+}
+
+.product-card {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-img {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.product-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.product-price {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.welcome-message {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Add custom styles here */
+.vegetable-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.vegetable-list li {
+    display: block;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.vegetable-list li:hover {
+    background-color: #f5f5f5;
+}
+
+@media only screen and (max-width: 768px) {
+    .vegetable-list li {
+        font-size: 16px;
+        padding: 8px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .vegetable-list li {
+        font-size: 14px;
+        padding: 6px;
+        text-align: center;
+    }
+    }
+/* Style the chart container */
+.chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the chart title */
+  #price-chart .chart-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the chart legend */
+  #price-chart .chart-legend {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the legend items */
+  #price-chart .chart-legend li {
+    margin-right: 20px;
+  }
+  
+  /* Style the legend color boxes */
+  #price-chart .chart-legend li span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 2px;
+  }
+  
+  /* Style the chart axes */
+  #price-chart .chart-axis {
+    font-size: 14px;
+    color: #999;
+  }
+  
+  /* Style the chart lines */
+  #price-chart .chart-line {
+    border-width: 2px;
+  }
+  
+  /* Style the chart data points */
+  #price-chart .chart-point {
+    border-width: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+  }
+  
+  /* Style the chart data points on hover */
+  #price-chart .chart-point:hover {
+    background-color: #fff;
+    border-color: #999;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  

@@ -1,0 +1,128 @@
+/*#############################################################################################*/
+/* CONTACTS CSS */
+  /* Body styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+    }
+    
+    /* Navigation bar styles */
+    .navbar {
+        background-color: #3CB371;
+    }
+    
+    .navbar-brand,
+    .navbar-nav .nav-link {
+        color: #fff;
+    }
+    
+    /* Contact form styles */
+    .container-fluid {
+        margin-top: 50px;
+    }
+    
+    .form-group label {
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .form-control {
+        border-color: #3CB371;
+    }
+    
+    .btn-primary {
+        background-color: #3CB371;
+        border-color: #3CB371;
+    }
+    
+    .btn-primary:hover {
+        background-color: #228B22;
+        border-color: #228B22;
+    }
+    
+    /* Footer styles */
+    .page-footer {
+        background-color: #3CB371;
+        color: #fff;
+        margin-top: 50px;
+    }
+    
+    .page-footer a,
+    .page-footer p {
+        color: #fff;
+    }
+    /* Heading animation styles */
+    .text-center {
+        opacity: 0;
+        position: relative;
+        top: 100px;
+    }
+    
+    /* Navbar brand animation styles */
+    .navbar-brand {
+        font-size: 30px;
+        transition: font-size 0.5s ease-in-out;
+    }
+
+/*#############################################################################################*/
+
+#indexFooter
+{
+    text-align: center;
+}
+
+.hh-center {
+    text-align: center;
+}
+.hh-small {
+    font-size: 12px;
+}
+.hh-opacity, .w3-hover-opacity:hover {
+    opacity: 0.60;
+}
+#HHlogo
+{
+    border-radius: 20%;
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+}
+
+/* .card
+{
+    padding-bottom: 30px; 
+    padding: 10%;
+} */
+
+.container {
+    padding: 20px;
+  }
+  
+.card {
+margin-bottom: 30px;
+padding: 5%;
+
+}
+.veg
+{
+    width:  250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 767px) {
+.container {
+    padding: 10px;
+}
+}
+.goLeft
+{
+    position: relative;
+    left: 0px;
+    width: 300px;
+    
+    padding: 10px;
+}
+/* ####################################################################33 */
